@@ -11,5 +11,12 @@ def index():
     #uses render_template function to return index.html
     return render_template("index.html")
 
+
+#mapl the url "about" to the Python function about
+@app.route("/about")
+def about():
+    #uses render_template function to return index.html
+    return render_template("about.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
